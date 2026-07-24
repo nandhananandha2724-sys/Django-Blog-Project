@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blogs',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'blog_main.wsgi.application'
-
+MEDIA_ROOT = BASE_DIR /'media'
+MEDIA_URL = '/media/'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
